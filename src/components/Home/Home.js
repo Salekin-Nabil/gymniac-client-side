@@ -1,5 +1,6 @@
 import Address from '../Address/Address';
 import Banner from '../Banner/Banner';
+import ContactUs from '../ContactUs/ContactUs';
 // import Quotes from '../Quotes/Quotes';
 // import Reviews from '../Reviews/Reviews';
 import Seperator from '../Seperator/Seperator';
@@ -26,6 +27,8 @@ const Home = () => {
           <Video></Video>
           <Seperator></Seperator>
           <Address></Address>
+          <Seperator></Seperator>
+          <ContactUs></ContactUs>
         </div>
     );
 };

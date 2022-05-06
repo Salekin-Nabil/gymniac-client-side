@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 // import About from './components/About/About';
 // import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
+import { ToastContainer } from 'react-toastify';
 // import Details from './components/Details/Details';
 // import Login from './components/Login/Login';
 // import RequireAuth from './components/RequireAuth/RequireAuth';
@@ -26,6 +27,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route> */}
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }
