@@ -1,0 +1,56 @@
+[
+    {
+      "id": "624a4a770483b304fedeccb0",
+      "index": 0,
+      "image": "https://randomuser.me/api/portraits/men/3.jpg",
+      "rating": 4.5,
+      "name": "Clarke Beasley",
+      "gender": "male",
+      "comment": "To let you all know Saul Goodman is a outstanding lawyer what he did for me was amazing and unexpected the work he did and his team help me out very much in past 5-6 months so yes I will recommend him to anyone who's looking for a very good lawyer he's the one I will refer so Peter Briskin keep doing your job you doing it very well Thank you"
+    },
+    {
+      "id": "624a4a77030d43ac8c1372f9",
+      "index": 1,
+      "image": "https://randomuser.me/api/portraits/women/66.jpg",
+      "rating": 5,
+      "name": "Elizabeth Coleman",
+      "gender": "female",
+      "comment": "Thank you Mr. Saul Goodman for advocating for me in this case. I was hesitant at first to pursue this case but glad I did.  Thank you for handling everything virtually on your end from start to finish. I believe we met twice during this entire case, at the beginning and at the end. Everything was conveniently handled online and via email."
+    },
+    {
+      "id": "624a4a77301c3af01a299aaf",
+      "index": 2,
+      "image": "https://randomuser.me/api/portraits/men/86.jpg",
+      "rating": 4.5,
+      "name": "Bass Leblanc",
+      "gender": "male",
+      "comment": "Saul Goodman took my case and was extremely professional, great with follow through, and most importantly won! Overall he was a pleasure to work with."
+    },
+    {
+      "id": "624a4a77ea08d037a8f67c2b",
+      "index": 3,
+      "image": "https://randomuser.me/api/portraits/women/34.jpg",
+      "rating": 4,
+      "name": "Crystal Perez",
+      "gender": "female",
+      "comment": "Lawyer Saul Goodman represented me after I was seriously injured in a really bad car accident.  He was always there to answer my questions, he fought like hell for me and recovered the maximum amount of money that was possible! I highly recommend him and his firm."
+    },
+    {
+      "id": "624a4a7720dbaf98a17c4988",
+      "index": 4,
+      "image": "https://randomuser.me/api/portraits/men/32.jpg",
+      "rating": 4.5,
+      "name": "Nielsen Edwards",
+      "gender": "male",
+      "comment": "He definitely took a great deal of stress off of my shoulders when he took on my case for a speeding ticket in a work zone. He got my ticket lowered and helped me immensely. I would definitely hire him again if needed."
+    },
+    {
+      "id": "624a4a772884827483a6aa8b",
+      "index": 5,
+      "image": "https://randomuser.me/api/portraits/women/50.jpg",
+      "rating": 5,
+      "name": "Carla Gregory",
+      "gender": "female",
+      "comment": "Mr. Saul Goodman represented me recently in a case and far exceeded ant expectation i had. He tenacity and compassion made me feel extremely taken care of. He was able to retrieve more from the insurance company that i thought i would ever recive. Even after being denied"
+    }
+  ]
