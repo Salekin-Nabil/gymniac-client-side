@@ -1,3 +1,4 @@
+import Address from '../Address/Address';
 import Banner from '../Banner/Banner';
 // import Quotes from '../Quotes/Quotes';
 // import Reviews from '../Reviews/Reviews';
@@ -20,6 +21,7 @@ const Home = () => {
           <div className='md:flex justify-around'>
             <Reviews></Reviews>
           </div> */}
+          <Address></Address>
         </div>
     );
 };

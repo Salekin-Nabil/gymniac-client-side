@@ -209,7 +209,7 @@ const Footer = () => {
                         <a href="#!" className="text-white">City Brunch: #75/1, Shukrabad, Dhaka</a>
                     </li>
                     <li>
-                        <a href="#!" className="text-white">Showroom: L-5B-27, Bashundhara City Complex</a>
+                        <a href="#!" className="text-white">Showroom: L-5B-27, Bashundhara City Shopping Complex</a>
                     </li>
                     <li>
                         <a href="#!" className="text-white">Warehouse: #24/3, Azimpur, Dhaka</a>
