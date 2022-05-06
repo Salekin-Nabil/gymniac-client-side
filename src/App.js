@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 // import Blogs from './components/Blogs/Blogs';
 // import About from './components/About/About';
 // import NotFound from './components/NotFound/NotFound';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 // import Details from './components/Details/Details';
 // import Login from './components/Login/Login';
 // import RequireAuth from './components/RequireAuth/RequireAuth';
@@ -13,7 +13,7 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div className="App bg-[#413433]">
+    <div className="App bg-[#20242c]">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
@@ -25,7 +25,7 @@ function App() {
         <Route path='/Register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route> */}
       </Routes>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
