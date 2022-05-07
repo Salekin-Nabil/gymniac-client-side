@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const ContactUs = () => {
     const { register, handleSubmit } = useForm();
-    const onSubmit = () => toast('Thank you for booking.');
+    const onSubmit = () => toast('Thanks for contacting with us.');
     return (
             <div className='mb-10'>
                 <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Keep in Touch</h2>
