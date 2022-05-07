@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify';
 import Login from './components/Login/Login';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import Register from './components/Register/Register';
+import Manage from './components/Manage/Manage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Home' element={<Home></Home>}></Route>
         {/* <Route path='/Checkout/:serviceId' element={<RequireAuth><Details></Details></RequireAuth>}></Route>
         <Route path='/Blogs' element={<Blogs></Blogs>}></Route> */}
+        <Route path='/Manage' element={<RequireAuth><Manage></Manage></RequireAuth>}></Route>
         <Route path='/About' element={<About></About>}></Route>
         <Route path='/Login' element={<Login></Login>}></Route>
         <Route path='/Register' element={<Register></Register>}></Route>

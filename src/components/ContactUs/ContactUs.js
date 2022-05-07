@@ -7,9 +7,9 @@ const ContactUs = () => {
     const onSubmit = () => toast('Thanks for contacting with us.');
     return (
             <div className='mb-10'>
-                <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Keep in Touch</h2>
+                <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Query / Support</h2>
                 <div className='flex justify-center'>
-                    <div className="block p-6 rounded-xl shadow-lg shadow-white hover:shadow-xl hover:shadow-white bg-white w-5/6 mx-4 md:mx-0">
+                    <div className="block p-6 rounded-xl shadow-lg shadow-white hover:shadow-xl hover:shadow-white bg-white w-full mx-4 md:mx-6">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <p className='text-2xl font-semibold mb-4 text-black'>Contact Us</p>
                             <div className='flex justify-center'>

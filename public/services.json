@@ -1,50 +1,182 @@
 [
     {
-      "id": "624a4a770483b304fedeccb0",
       "index": 0,
       "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/jump-or-skipping-rope-isolated-on-white-background.jpg",
       "name": "Lite Jump Rope",
       "price": 20,
-      "description": "Mediation is a procedure in which the parties discuss their disputes with the assistance of a trained impartial third person(s) who assists them in reaching a settlement. It may be an informal meeting among the parties or a scheduled settlement conference."
+      "quantity": 30,
+      "supplier": "Salekin Nabil",
+      "description": "Light weight jumping rope for regular exercise."
     },
     {
-      "id": "624a4a77030d43ac8c1372f9",
       "index": 1,
       "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/sports-trousers-on-a-white-background-.jpg",
-      "name": "Preparation of Documents",
+      "name": "Sport Trousers",
       "price": 40,
-      "description": "Rearranging all the legal documents in an organized way, so that there won't exist any mistake and will make your work easy."
+      "quantity": 25,
+      "supplier": "Sabbir Alam",
+      "description": "Comfortable trouser for running, exercise and sports."
     },
     {
-      "id": "624a4a77301c3af01a299aaf",
       "index": 2,
-      "image": "https://img.freepik.com/free-photo/mature-lawyer-with-clients-meeting_23-2147898414.jpg",
-      "name": "Legal Advice",
-      "price": 249,
-      "description": "Basic instruction on how to complete a legal form, where to place information on the form, and the definition of legal terms used on a form constitute the provision of legal information. Instructing a person on how to phrase information in a legal document or form, or advising the person as to what he or she should say in court, is the provision of legal advice."
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/jumping-rope-1.jpg",
+      "name": "Black Jump Rope",
+      "price": 20,
+      "quantity": 30,
+      "supplier": "Salekin Nabil",
+      "description": "Premium long lasting jump rope for gym."
     },
     {
-      "id": "624a4a77ea08d037a8f67c2b",
       "index": 3,
-      "image": "https://img.freepik.com/free-photo/judges-gavel-book-wooden-table-law-justice-concept-background_1150-9097.jpg",
-      "name": "Representing Clients in Court",
-      "price": 559,
-      "description": "Acting as both advocates and advisors in our society. As advocates, they represent one of the parties in criminal and civil trials by presenting evidence and arguing in court to support their client."
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/dumbbell-blue.jpg",
+      "name": "Dumbbell 10 Kg",
+      "price": 24,
+      "quantity": 20,
+      "supplier": "Ali Abrar",
+      "description": "10Kg dumbbell for intermediates, color-blue."
     },
     {
-      "id": "624a4a7720dbaf98a17c4988",
       "index": 4,
-      "image": "https://img.freepik.com/free-photo/investor-trader-discussing-statistic-data-holding-papers-with-financial-charts-pen-cropped-shot-broker-job-trading-concept_74855-14252.jpg",
-      "name": "Review Documents",
-      "price": 199,
-      "description": "Reviewing documents such as agreements, leases, wills, corporation documents, do-it-yourself court forms"
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product10_2000x.jpg",
+      "name": "LCD Electric Foldable Treadmill",
+      "price": 43999,
+      "quantity": 4,
+      "supplier":"Salekin Nabil",
+      "description": "Electric foldable treadmill with lcd monitor."
     },
     {
-      "id": "624a4a772884827483a6aa8b",
       "index": 5,
-      "image": "https://img.freepik.com/free-photo/smiling-company-manager-welcoming-client-office_1163-5290.jpg",
-      "name": "Representing Clients in Negotiations",
-      "price": 389,
-      "description": "Possibly under “collaborative lawyering” agreement where both attorneys withdraw if either side chooses to litigate."
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product4_2000x.jpg",
+      "name": "Motorized Multi-Function Treadmill",
+      "price": 17700,
+      "quantity": 7,
+      "supplier":"Sabbir Alam",
+      "description": "Motorized treadmill with multi-functionality."
+    },
+    {
+      "index": 6,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product13_2000x.jpg",
+      "name": "Semi Pro Commercial Treadmill",
+      "price": 41599,
+      "quantity": 70,
+      "supplier":"Ali Abrar",
+      "description": "Commercial treadmills for market place to sell"
+    },
+    {
+      "index": 7,
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/blue-weigh-scales-isolated-on-white-background.jpg",
+      "name": "Weight Scale",
+      "price": 14,
+      "quantity": 67,
+      "supplier":"Salekin Nabil",
+      "description": "Weight scale with 100% accuracy."
+    },
+    {
+      "index": 8,
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/sport-jacket-for-clothing.jpg",
+      "name": "Sport Jacket",
+      "price": 52,
+      "quantity": 33,
+      "supplier":"Salekin Nabil",
+      "description": "Comfortable sport jacket for winter."
+    },
+    {
+      "index": 9,
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/pink-yoga-mat.jpg",
+      "name": "Yoga Matt",
+      "price": 25,
+      "quantity": 130,
+      "supplier":"Ali Abrar",
+      "description": "Pink, soft yoga matt for morning meditation."
+    },
+    {
+      "index": 10,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product15_2000x.jpg",
+      "name": "Touch Screen Treadmill",
+      "price": 23999,
+      "quantity": 6,
+      "supplier":"Sabbir Alam",
+      "description": "Easy to operate this treadmill with it's touch screen."
+    },
+    {
+      "index": 11,
+      "image": "https://templatekit.jegtheme.com/gymniac/wp-content/uploads/sites/256/2022/04/whey-protein-powder-with-scoop-and-dumbbell-bodyb.jpg",
+      "name": "Whey Protein",
+      "price": 45,
+      "quantity": 345,
+      "supplier":"Ali Abrar",
+      "description": "Whey protein for muscles to build up and recover quickly."
+    },
+    {
+      "index": 12,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product7_2000x.jpg",
+      "name": "Folding Multi-Function Treadmill",
+      "price": 35799,
+      "quantity": 1,
+      "supplier":"Hirak Bose",
+      "description": "Easy to store for it's folding feature."
+    },
+    {
+      "index": 13,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product3_2000x.jpg",
+      "name": "Electric Motorized Treadmill",
+      "price": 27699,
+      "quantity": 24,
+      "supplier":"Hirak Bose",
+      "description": "Two way power supply for running this treadmill."
+    },
+    {
+      "index": 14,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product1_2000x.jpg",
+      "name": "AC Motorized Treadmill",
+      "price": 22999,
+      "quantity": 5,
+      "supplier":"Hirak Bose",
+      "description": "Runs via AC current and fully motorized."
+    },
+    {
+      "index": 15,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product6_2000x.jpg",
+      "name": "Digital Foldable Treadmill",
+      "price": 37699,
+      "quantity": 10,
+      "supplier":"Hossain Shahariar",
+      "description": "Easily storable and digital functionalities are available."
+    },
+    {
+      "index": 16,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product9_2000x.jpg",
+      "name": "LCD Electric Foldable Treadmill",
+      "price": 46799,
+      "quantity": 17,
+      "supplier":"Sabbir Alam",
+      "description": "Foldable treadmill with lcd display and electric power supply."
+    },
+    {
+      "index": 17,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product8_2000x.jpg",
+      "name": "Motorized Foldable Treadmill",
+      "price": 14999,
+      "quantity": 15,
+      "supplier":"Hossain Shahariar",
+      "description": "Foldable and easy to operate this treadmill."
+    },
+    {
+      "index": 18,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product10_2000x.jpg",
+      "name": "Manual Incline Motorized Treadmill",
+      "price": 33499,
+      "quantity": 8,
+      "supplier":"Salekin Nabil",
+      "description": "Classic treadmill for vintage collection."
+    },
+    {
+      "index": 19,
+      "image": "https://cdn.shopify.com/s/files/1/0477/5709/9165/products/Product4_2000x.jpg",
+      "name": "HP Motorized MP3 Treadmill",
+      "price": 67700,
+      "quantity": 9,
+      "supplier":"Ali Abrar",
+      "description": "A perfect deal for health conscious customers."
     }
   ]
