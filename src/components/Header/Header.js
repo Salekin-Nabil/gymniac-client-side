@@ -4,19 +4,18 @@ import CustomLink from '../CustomLink/CustomLink';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
-// import { signOut } from 'firebase/auth';
-// import auth from '../../firebase.init';
-// import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
 
-    // const [user] = useAuthState(auth);
+    const [user] = useAuthState(auth);
 
     const handleSignOut = () =>{
-        // signOut(auth);
+        signOut(auth);
     }
-    const user = true;
 
     return (
         <nav className='bg-black py-4  shadow-2xl shadow-white sticky-top '>

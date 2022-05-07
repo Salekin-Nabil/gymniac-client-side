@@ -8,9 +8,9 @@ import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 import { ToastContainer } from 'react-toastify';
 // import Details from './components/Details/Details';
-// import Login from './components/Login/Login';
-// import RequireAuth from './components/RequireAuth/RequireAuth';
-// import Register from './components/Register/Register';
+import Login from './components/Login/Login';
+import RequireAuth from './components/RequireAuth/RequireAuth';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -22,8 +22,8 @@ function App() {
         {/* <Route path='/Checkout/:serviceId' element={<RequireAuth><Details></Details></RequireAuth>}></Route>
         <Route path='/Blogs' element={<Blogs></Blogs>}></Route> */}
         <Route path='/About' element={<About></About>}></Route>
-        {/* <Route path='/Login' element={<Login></Login>}></Route>
-        <Route path='/Register' element={<Register></Register>}></Route> */}
+        <Route path='/Login' element={<Login></Login>}></Route>
+        <Route path='/Register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
