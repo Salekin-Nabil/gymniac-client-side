@@ -1,3 +1,5 @@
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
 const MyProducts = ({product, handleOnDelete}) => {
@@ -17,7 +19,7 @@ const MyProducts = ({product, handleOnDelete}) => {
                     <h4 className='text-[20px] font-bold mt-[10px]'>Supplier: {supplier}</h4>
                     
                     <div className="flex justify-center absolute w-full bottom-4 ml-[-28px] md:ml-[-70px]">
-                        <button onClick={()=>handleOnDelete(_id)} type="button" className="block px-6 py-2.5 w-80 md:w-80 bg-red-800 text-white font-medium text-lg leading-tight uppercase rounded-3xl shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-500 active:shadow-lg transition duration-150 ease-in-out">Delete</button>
+                        <button onClick={()=>handleOnDelete(_id)} type="button" className="block px-6 py-2.5 w-80 md:w-80 bg-red-800 text-white font-medium text-lg leading-tight uppercase rounded-3xl shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-600 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-500 active:shadow-lg transition duration-150 ease-in-out">Delete <FontAwesomeIcon className='text-white ml-6' icon={faTrashCan}></FontAwesomeIcon></button>
                     </div>
                 </div>
             </div>

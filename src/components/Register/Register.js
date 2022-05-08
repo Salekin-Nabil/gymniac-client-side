@@ -105,7 +105,7 @@ const Register = () => {
                         <button
                             disabled={!agree}
                             type="submit"
-                            className="inline-block px-7 py-3 bg-[#96be25] text-white font-medium text-sm leading-snug uppercase rounded shadow-lg hover:bg-yellow-700 hover:shadow-xl hover:shadow-white focus:bg-yellow-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-yellow-800 active:shadow-2xl active:shadow-white transition duration-150 ease-in-out w-full shadow-white"
+                            className="inline-block px-7 py-3 bg-[#96be25] text-white font-medium text-sm leading-snug uppercase rounded shadow-lg hover:bg-[#6f9111] hover:shadow-xl hover:shadow-white focus:bg-[#4b6308] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#354703] active:shadow-2xl active:shadow-white transition duration-150 ease-in-out w-full shadow-white"
                             data-mdb-ripple="true"
                             data-mdb-ripple-color="light"
                         >
