@@ -4,6 +4,10 @@
 
 [https://gymniac-d9a71.web.app/](https://gymniac-d9a71.web.app/)
 
+## [Live server link](https://safe-falls-53497.herokuapp.com/)
+
+[https://safe-falls-53497.herokuapp.com/](https://safe-falls-53497.herokuapp.com/)
+
 ## Project Details
 
 * 4 types of sign-in methods (Email, Google, Github, Facebook).
