@@ -5,12 +5,12 @@ import { Helmet } from 'react-helmet-async';
 import useProducts from '../../Hooks/useProducts';
 
 const Manage = () => {
-    const [products, setProducts] = useProducts("http://localhost:5000/products");
+    const [products, setProducts] = useProducts("https://safe-falls-53497.herokuapp.com/products");
     
     const handleOnDelete = id =>{
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://safe-falls-53497.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

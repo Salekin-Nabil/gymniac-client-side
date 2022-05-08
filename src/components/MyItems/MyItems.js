@@ -16,7 +16,7 @@ const MyItems = () => {
         
         const getProducts = async() =>{
             const email = user.email;
-            const url = `http://localhost:5000/myProducts?supplier=${email}`;
+            const url = `https://safe-falls-53497.herokuapp.com/myProducts?supplier=${email}`;
             try{
                 const {data} = await axiosPrivate.get(url);
                 setProducts(data);
@@ -35,7 +35,7 @@ const MyItems = () => {
     const handleOnDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if(proceed){
-            const url = `http://localhost:5000/products/${id}`;
+            const url = `https://safe-falls-53497.herokuapp.com/products/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -8,7 +8,7 @@ const ProductDetails = () => {
     let params = useParams();
     const navigate = useNavigate();
     const restockedRef = useRef('');
-    const [products, setProducts] = useProducts(`http://localhost:5000/products/${params.productId}`);
+    const [products, setProducts] = useProducts(`https://safe-falls-53497.herokuapp.com/products/${params.productId}`);
     let {_id, name, price, image, quantity, supplier, description} = products;
     let sold = "";
     if(quantity == 0){
@@ -38,7 +38,7 @@ const ProductDetails = () => {
 
 
         // send data to the server
-        const url = `http://localhost:5000/products/${_id}`;
+        const url = `https://safe-falls-53497.herokuapp.com/products/${_id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -66,7 +66,7 @@ const ProductDetails = () => {
         const newProduct = {quantity, ...rest};
 
         // send data to the server
-        const url = `http://localhost:5000/products/${_id}`;
+        const url = `https://safe-falls-53497.herokuapp.com/products/${_id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -24,7 +24,7 @@ const AddItems = () => {
             "description": descriptionRef.current.value
         };
         console.log(data);
-        const url = `http://localhost:5000/products`;
+        const url = `https://safe-falls-53497.herokuapp.com/products`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -36,7 +36,7 @@ const AddItems = () => {
         .then(result =>{
             console.log(result);
         } );
-        const url1 = `http://localhost:5000/stock`;
+        const url1 = `https://safe-falls-53497.herokuapp.com/stock`;
         fetch(url1, {
             method: 'POST',
             headers: {

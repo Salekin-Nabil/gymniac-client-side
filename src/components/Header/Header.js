@@ -7,9 +7,11 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import { signOut } from 'firebase/auth';
 import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate();
 
     const [user] = useAuthState(auth);
 
@@ -20,10 +22,10 @@ const Header = () => {
     return (
         <nav className='bg-black py-4  shadow-2xl shadow-white sticky-top '>
             <div className='flex items-center'>
-                <div onClick={()=>setOpen(!open)} className='w-8 h-8 md:hidden mr-16 ml-4'>
+                <div onClick={()=>setOpen(!open)} className='w-8 h-8 md:hidden mr-16 ml-4 '>
                     {open ? <XIcon className='text-white'></XIcon> : <MenuIcon className='text-white'></MenuIcon>}
                 </div>
-                <div className='flex items-center md:justify-start justify-center md:pl-8'>
+                <div onClick={()=>navigate('/')} className='flex items-center md:justify-start justify-center md:pl-8 cursor-pointer'>
                     <h4 className='text-[26px] font-semibold text-white'><span className='bg-[#96be25] px-1 rounded'>GYM</span>NIAC</h4>
                     <FontAwesomeIcon className='text-[#96be25] text-[26px] ml-[10px]' icon={faDumbbell}></FontAwesomeIcon>
                 </div>
