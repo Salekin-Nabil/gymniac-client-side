@@ -6,11 +6,13 @@ import Loading from '../Loading/Loading';
 import google from '../../images/social icons/google.png';
 import github from '../../images/social icons/github.png';
 import './SocialLogin.css';
+import useToken from '../../Hooks/useToken';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
     const [signInWithFacebook, user2, loading2, error2] = useSignInWithFacebook(auth);
+    const [token, setToken] = useToken(user || user1 || user2);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -26,7 +28,7 @@ const SocialLogin = () => {
         errorElement = <p className='text-white bg-red-700  my-4 text-lg'>Error: {error?.message} {error1?.message} {error2?.message} </p>
     }
 
-    if (user || user1 || user2) {
+    if (token) {
         navigate(from, { replace: true });
     }
     return (

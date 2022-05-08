@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import axios from 'axios';
 import { Helmet } from 'react-helmet-async';
+import useToken from '../../Hooks/useToken';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -26,13 +27,14 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [token, setToken] = useToken(user);
 
     if (loading) {
         return <Loading></Loading>
     }
 
-    if (user) {
-        // navigate(from, { replace: true });
+    if (token) {
+        navigate(from, { replace: true });
     }
 
     if (error) {
@@ -47,9 +49,6 @@ const Login = () => {
         console.log(email, password);
 
         await signInWithEmailAndPassword(email, password);
-        const {data} = await axios.post('https://safe-falls-53497.herokuapp.com/login', {email});
-        localStorage.setItem('accessToken', data.accessToken);
-        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {

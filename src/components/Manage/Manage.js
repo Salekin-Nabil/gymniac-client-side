@@ -1,11 +1,34 @@
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 import useProducts from '../../Hooks/useProducts';
 
 const Manage = () => {
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(10);
+    const navigate = useNavigate();
+
+    useEffect( () =>{
+        fetch(`https://safe-falls-53497.herokuapp.com/product?page=${page}&size=${size}`)
+        .then(res => res.json())
+        .then(data => setProducts(data));
+    }, [page, size]);
+
+    useEffect( () =>{
+        fetch('https://safe-falls-53497.herokuapp.com/productCount')
+        .then(res => res.json())
+        .then(data =>{
+            const count = data.count;
+            const pages = Math.ceil(count/10);
+            setPageCount(pages);
+        })
+    }, [page])
+
     const [products, setProducts] = useProducts("https://safe-falls-53497.herokuapp.com/products");
+
     
     const handleOnDelete = id =>{
         const proceed = window.confirm('Are you sure?');
@@ -87,6 +110,22 @@ const Manage = () => {
                     </div>
                 </div>
             </div>
+            <div className=' mt-20 '>
+                    {
+                        [...Array(pageCount).keys()]
+                        .map(number => <button
+                            className={page === number ? ' text-white bg-green-600 py-1 px-3 rounded-lg mr-4': 'text-black bg-white py-1 px-3 rounded-lg mr-4'}
+                            onClick={() => setPage(number)}
+                        >{number + 1}</button>)
+                    }
+                    
+                    <select className='py-1 px-3 rounded-lg' onChange={e => setSize(e.target.value)}>
+                        <option value="10" defaultValue={10}>10</option>
+                        <option value="15">15</option>
+                        <option value="20" >20</option>
+                    </select>
+                </div>
+                <button onClick={()=>navigate('/Add')} className='rounded-3xl text-white text-2xl font-semibold bg-[#607c14] active:bg-[#506a09] focus:bg-[#4a6402] hover:bg-[#344506] shadow-lg shadow-white hover:shadow-xl hover:shadow-white mt-20 py-2 px-20 md:px-60'>Add New Item</button>
         </div>
     );
 };
