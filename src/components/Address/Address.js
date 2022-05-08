@@ -5,7 +5,7 @@ import 'leaflet/dist/leaflet.css';
 const Address = () => {
     return (
         <div className='my-36'>
-            <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Our Location</h2>
+            <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Our <span className='text-[#96be25]'>Location</span></h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                 <div className='border-2 bg-indigo-50 hover:bg-[#96be25] rounded-lg md:mx-2 shadow-lg shadow-white hover:shadow-xl hover:shadow-white'>
                     <h3 className='text-3xl text-black mb-10 font-semibold'>Main Brunch</h3>

@@ -7,11 +7,11 @@ const ContactUs = () => {
     const onSubmit = () => toast('Thanks for contacting with us.');
     return (
             <div className='mb-10'>
-                <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Query / Support</h2>
+                <h2 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Query / <span className='text-[#96be25]'>Support</span></h2>
                 <div className='flex justify-center'>
                     <div className="block p-6 rounded-xl shadow-lg shadow-white hover:shadow-xl hover:shadow-white bg-white w-full mx-4 md:mx-6">
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <p className='text-2xl font-semibold mb-4 text-black'>Contact Us</p>
+                            <p className='text-2xl font-semibold mb-4 text-[#96be25]'>Contact Us</p>
                             <div className='flex justify-center'>
                                 <div className="form-group mb-6 w-full mr-2">
                                     <input type="text" className="form-control block
@@ -98,7 +98,7 @@ const ContactUs = () => {
                                 <input type="checkbox"
                                     className="form-check-input appearance-none h-4 w-4 border border-black rounded-sm bg-white checked:bg-[#96be25] checked:border-[#96be25] focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
                                 />
-                                <label className="form-check-label inline-block text-black" for="exampleCheck87">Send me a copy of this message</label>
+                                <label className="form-check-label inline-block text-[#96be25]" for="exampleCheck87">Send me a copy of this message</label>
                                 </div>
                                 <button type="submit" className="
                                 w-full
@@ -111,7 +111,9 @@ const ContactUs = () => {
                                 leading-tight
                                 uppercase
                                 rounded-xl
-                                focus:bg-yellow-700 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg
+                                hover:bg-[#607c10]
+                                focus:bg-[#57720c] 
+                                active:bg-[#354704] focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg
                                 shadow-lg shadow-white hover:shadow-xl hover:shadow-white
                                 transition
                                 duration-150

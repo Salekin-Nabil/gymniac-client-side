@@ -21,10 +21,20 @@ const ProductDetails = () => {
         // const name = event.target.name.value;
         // const email = event.target.email.value;
 
+        let {quantity, ...rest} = products;
+
         const number = parseInt(quantity);
+        if(quantity == 0){
+            toast('Stock Out...!!!!')
+            return;
+        }
         quantity = number-1;
 
         const updatedProduct = {quantity};
+
+        
+        const newProduct = {quantity, ...rest};
+
 
         // send data to the server
         const url = `http://localhost:5000/products/${_id}`;
@@ -37,6 +47,8 @@ const ProductDetails = () => {
         })
         .then(res => res.json())
         .then(data =>{
+            console.log(newProduct);
+            setProducts(newProduct);
             console.log('success', data);
             toast('The product has been delivered successfully!!!');
         })
@@ -44,10 +56,13 @@ const ProductDetails = () => {
     const handleOnRestock = event => {
         const restocked = restockedRef.current.value;
         const restock = parseInt(restocked);
+        let {quantity, ...rest} = products;
         const number = parseInt(quantity);
         quantity = number+restock;
 
         const updatedProduct = {quantity};
+        
+        const newProduct = {quantity, ...rest};
 
         // send data to the server
         const url = `http://localhost:5000/products/${_id}`;
@@ -60,6 +75,8 @@ const ProductDetails = () => {
         })
         .then(res => res.json())
         .then(data =>{
+            console.log(newProduct);
+            setProducts(newProduct);
             console.log('success', data);
             toast('The product has been restocked successfully!!!');
         });
@@ -67,7 +84,7 @@ const ProductDetails = () => {
 
     return (
         <div className='mb-20'>
-            <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg my-6'>Product Details</h1>
+            <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg my-6'>Product <span className='text-[#96be25]'>Details</span></h1>
             <div className="flex justify-center mt-20 mx-2">
                 <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-indigo-50 shadow-lg">
                     <img className=" w-full h-96 md:h-auto object-cover md:w-64 rounded-t-lg md:rounded-none md:rounded-l-lg" src={image} alt="" />

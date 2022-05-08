@@ -20,14 +20,14 @@ const Manage = () => {
                 setProducts(remaining);
             })
         }
-    }
+    };
     return (
         <div>
-            <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Manage Inventories</h1>
+            <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Manage <span className='text-[#96be25]'>Inventories</span></h1>
             <div class="flex flex-col mx-6 ">
                 <div class="overflow-x-auto sm:-mx-6 lg:-mx-8 ">
                     <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8 ">
-                    <div class="overflow-hidden rounded-lg">
+                    <div class="overflow-hidden rounded-lg shadow-lg shadow-white hover:shadow-xl hover:shadow-white">
                         <table class="min-w-full ">
                             <thead class="bg-white border-b">
                                 <tr>

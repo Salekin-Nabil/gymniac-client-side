@@ -7,6 +7,7 @@ import Loading from '../Loading/Loading';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import axios from 'axios';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -30,21 +31,24 @@ const Login = () => {
     }
 
     if (user) {
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
     }
 
     if (error) {
         errorElement = <p className='text-white bg-red-700 my-4 text-lg'>Error: {error?.message}</p>
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
         console.log(email, password);
 
-        signInWithEmailAndPassword(email, password);
+        await signInWithEmailAndPassword(email, password);
+        const {data} = await axios.post('http://localhost:5000/login', {email});
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {
@@ -64,7 +68,7 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto mt-[4vw] mb-[300px]  md:mb-0'>
-            <h1 className='md:text-[4vw] text-3xl md:py-6 text-white font-bold shadow-2xl shadow-white mx-16'>Login <span className='text-[#beafa7]'>Form</span></h1>
+            <h1 className='md:text-[4vw] text-3xl md:py-6 text-white font-bold shadow-2xl shadow-white mx-16'>Login <span className='text-[#96be25]'>Form</span></h1>
             <section className="h-screen mb-32">
                 <div className="container px-6 py-12 h-full">
                     <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">

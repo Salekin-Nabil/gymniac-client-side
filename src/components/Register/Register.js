@@ -42,7 +42,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto mt-[4vw]'>
-            <h1 className='md:text-[4vw] md:py-6 text-2xl text-white font-bold shadow-2xl shadow-white mx-16'>Registration <span className='text-[#beafa7]'>Form</span></h1>
+            <h1 className='md:text-[4vw] md:py-6 text-2xl text-white font-bold shadow-2xl shadow-white mx-16'>Registration <span className='text-[#96be25]'>Form</span></h1>
             <section className="h-screen mb-96">
                 <div className="container px-6 py-12 h-full">
                     <div className="flex justify-center items-center flex-wrap h-full g-6 text-gray-800">
