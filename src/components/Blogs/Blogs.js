@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Blogs.css';
 
 const Blogs = () => {
     return (
         <div className='my-[5vw]'>
+        <Helmet>
+            <title>Gymniac-Blogs</title>
+        </Helmet>
             <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Blog <span className='text-[#96be25]'>Articles</span></h1>
             <div className='md:flex md:justify-around'>
                 <div className="flex justify-center my-[5vw]">

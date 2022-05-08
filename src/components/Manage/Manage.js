@@ -1,6 +1,7 @@
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import useProducts from '../../Hooks/useProducts';
 
 const Manage = () => {
@@ -23,6 +24,9 @@ const Manage = () => {
     };
     return (
         <div>
+        <Helmet>
+            <title>Gymniac-Manage Inventory</title>
+        </Helmet>
             <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>Manage <span className='text-[#96be25]'>Inventories</span></h1>
             <div class="flex flex-col mx-6 ">
                 <div class="overflow-x-auto sm:-mx-6 lg:-mx-8 ">

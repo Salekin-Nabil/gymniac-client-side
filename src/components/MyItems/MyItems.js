@@ -1,6 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate } from 'react-router-dom';
 import axiosPrivate from '../../api/axiosPrivate';
 import auth from '../../firebase.init';
@@ -48,6 +49,9 @@ const MyItems = () => {
     };
     return (
         <div>
+        <Helmet>
+            <title>Gymniac-My Items</title>
+        </Helmet>
             <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg'>My <span className='text-[#96be25]'>Items :</span> {products.length}</h1>
             <div className='md:grid md:grid-cols-3 md:gap-5'>
                 {

@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import Loading from '../Loading/Loading';
 import './Register.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { Helmet } from 'react-helmet-async';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -42,6 +43,9 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto mt-[4vw]'>
+        <Helmet>
+            <title>Gymniac-Register</title>
+        </Helmet>
             <h1 className='md:text-[4vw] md:py-6 text-2xl text-white font-bold shadow-2xl shadow-white mx-16'>Registration <span className='text-[#96be25]'>Form</span></h1>
             <section className="h-screen mb-96">
                 <div className="container px-6 py-12 h-full">

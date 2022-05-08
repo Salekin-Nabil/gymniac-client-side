@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import useProducts from '../../Hooks/useProducts';
@@ -84,6 +85,9 @@ const ProductDetails = () => {
 
     return (
         <div className='mb-20'>
+        <Helmet>
+            <title>Gymniac-Project Details</title>
+        </Helmet>
             <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg my-6'>Product <span className='text-[#96be25]'>Details</span></h1>
             <div className="flex justify-center mt-20 mx-2">
                 <div className="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-indigo-50 shadow-lg">

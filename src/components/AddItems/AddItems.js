@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
@@ -51,6 +52,9 @@ const AddItems = () => {
     };
     return (
         <div className=''>
+        <Helmet>
+            <title>Gymniac-Add Item</title>
+        </Helmet>
             <h1 className='text-white text-5xl mb-8 font-bold shadow-lg shadow-white hover:shadow-xl hover:shadow-white mx-[1vw] py-[1vw] rounded-lg my-6'>Product <span className='text-[#96be25]'>Insertion</span></h1>
             <div className='flex justify-center my-20'>
                 <div className="block p-6 rounded-xl shadow-lg shadow-white hover:shadow-xl hover:shadow-white bg-white w-full mx-4 md:mx-20">

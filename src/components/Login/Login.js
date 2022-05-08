@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import axios from 'axios';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -68,6 +69,9 @@ const Login = () => {
 
     return (
         <div className='container w-50 mx-auto mt-[4vw] mb-[300px]  md:mb-0'>
+        <Helmet>
+            <title>Gymniac-Login</title>
+        </Helmet>
             <h1 className='md:text-[4vw] text-3xl md:py-6 text-white font-bold shadow-2xl shadow-white mx-16'>Login <span className='text-[#96be25]'>Form</span></h1>
             <section className="h-screen mb-32">
                 <div className="container px-6 py-12 h-full">

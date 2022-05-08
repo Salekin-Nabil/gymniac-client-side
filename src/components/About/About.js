@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import './About.css';
 
 const About = () => {
     return (
         <div className='mt-[5vw] md:flex items-center justify-around md:mx-[5vw] order-first'>
+            <Helmet>
+                <title>Gymniac-About</title>
+            </Helmet>
             <div className='my-[10vw] md:my-0 flex justify-center order-last'>
                 <img className='w-[80vw] md:w-[40vw] rounded-full bg-[#c7e379] border-8 border-white' src='victory.png'/>
             </div>
